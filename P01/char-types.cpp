@@ -6,31 +6,26 @@ int main()
     int n;
     std::cin >> n;
 
-    int letter_count = 0;
-    int digit_count = 0;
-    int other_count = 0;
-
+    int letterCounter = 0, numberCounter = 0, specialCounter = 0;
     char c;
+
     for (int i = 0; i < n; i++)
     {
         std::cin >> c;
         if (isalpha(c))
         {
-            letter_count++;
+            letterCounter++;
         }
         else if (isdigit(c))
         {
-            digit_count++;
+            numberCounter++;
         }
         else
         {
-            other_count++;
+            specialCounter++;
         }
     }
 
-    std::cout << letter_count << " ";
-    std::cout << digit_count << " ";
-    std::cout << other_count << " ";
-
+    std::cout << letterCounter << " " << numberCounter << " " << specialCounter;
     return 0;
 }
