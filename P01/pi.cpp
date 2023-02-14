@@ -5,7 +5,7 @@
 int main() {
     double res = 0;
     int k, d;
-    std::cin >> k, d;
+    std::cin >> k >> d;
     for (int i = 0; i <= k; i++) {
         res += pow(-1, i) / (2 * i + 1);
     }
