@@ -2,14 +2,13 @@
 
 int main() {
     int n;
-    bool flag = true;
+    bool flag;
     std::cin >> n;
     if (n == 2) {
         std::cout << 2;
         return 0;
     }
-    if (n > 2) std::cout << 2 << " ";
-    for (int i = 3; i <= n; i++) {
+    for (int i = 2; i <= n; i++) {
         flag = true;
         for (int j = 2; j < i; j++) {
             if (i % j == 0) {
